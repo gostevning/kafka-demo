@@ -14,7 +14,7 @@ public class Scheduler {
         this.producer = producer;
     }
 
-    @Scheduled(fixedRate = 1000, initialDelay = 0)
+    @Scheduled(fixedRate = 5000)
     public void produce() {
         producer.sendMessage(UUID.randomUUID().toString());
     }
