@@ -9,8 +9,6 @@ services:
   kafka-producer:
     build: kafka-producer
     container_name: kafka-producer
-    ports:
-      - "8080:8080"
     depends_on:
       - kafka
   kafka:
